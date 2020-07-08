@@ -2,15 +2,17 @@
 //Given two numbers, write an algorithm that outputs the sum of all odd
 // numbers between those numbers, inclusive.
 
-function sumOdds (n) {
-    let sum = 0
+//Read in two numbers from the user and assign then to startNumber and endNumber
 
-    for (let i = 1; i <= n; i += 2) {
-        sum += i
+
+function sumOddNumbers(startNumber, endNumber) {
+    let total = 0;
+
+    for (i = startNumber; i <= endNumber; i++) {
+        if(i % 2 !== 0) {
+            total = total + i;
+        }
     }
-
-    return sum
+    return total;
 }
-
-console.log(sumOdds(15))
-
+console.log (sumOddNumbers(0, 15))
