@@ -1,1 +1,1 @@
-# algoriththem-challenge
+# algorithem-challenge
